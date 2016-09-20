@@ -18,8 +18,8 @@
 		 ?>
  </header>
          <?php 
-		 $jokedata = $connection->query("SELECT * FROM joke ORDER BY id DESC"); 
-		 $joke = $data->fetch_assoc();
+		 $jokedata = $connection->query("SELECT * FROM jokes ORDER BY id DESC"); 
+		 $joke = $jokedata->fetch_assoc();
 		 ###############################################################################################
 		 # Oh my god - I need a way to render ALL records from the database, not only the last one :-( #
 		 # This makes me sick...                                                                       # 
